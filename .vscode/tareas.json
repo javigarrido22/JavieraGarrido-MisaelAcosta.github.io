@@ -1,0 +1,705 @@
+{
+    "openapi": "3.0.1",
+    "información": {
+      "título": "API RealityFirst",
+      "versión": "v1"
+    },
+    "caminos": {
+      "/api/Artista": {
+        "conseguir": {
+          "etiquetas": [
+            "Artista"
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "correo": {
+          "etiquetas": [
+            "Artista"
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Artista/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "Artista"
+          ],
+          "operationId": "GetArtista",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "poner": {
+          "etiquetas": [
+            "Artista"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Artista"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "Eliminar": {
+          "etiquetas": [
+            "Artista"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Evento": {
+        "conseguir": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "correo": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Evento/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "IdOperación": "ObtenerEvento",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "poner": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Evento"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "Eliminar": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Evento/PorArtista/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "Evento"
+          ],
+          "operationId": "ObtenerEventosPorArtista",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Noticia": {
+        "conseguir": {
+          "etiquetas": [
+            "Noticia"
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "correo": {
+          "etiquetas": [
+            "Noticia"
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/Noticias/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "Noticia"
+          ],
+          "operacionId": "ObtenerNoticia",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "poner": {
+          "etiquetas": [
+            "Noticia"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/Noticia"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "Eliminar": {
+          "etiquetas": [
+            "Noticia"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/TipoTicket": {
+        "conseguir": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "correo": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/TipoTicket/PorId/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "operationId": "ObtenerPrecios",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/TipoTicket/PorTipo/{id}": {
+        "conseguir": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "operationId": "ObtenerPreciosPorTipo",
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      },
+      "/api/TipoTicket/{id}": {
+        "poner": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "cuerposolicitud": {
+            "contenido": {
+              "aplicación/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              },
+              "texto/json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              },
+              "aplicación/*+json": {
+                "esquema": {
+                  "$ref": "#/componentes/esquemas/TipoTicket"
+                }
+              }
+            }
+          },
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        },
+        "Eliminar": {
+          "etiquetas": [
+            "TipoTicket"
+          ],
+          "parámetros": [
+            {
+              "nombre": "identificación",
+              "en": "camino",
+              "obligatorio": cierto,
+              "esquema": {
+                "tipo": "entero",
+                "formato": "int32"
+              }
+            }
+          ],
+          "respuestas": {
+            "200": {
+              "descripción": "Éxito"
+            }
+          }
+        }
+      }
+    },
+    "componentes": {
+      "esquemas": {
+        "Artista": {
+          "tipo": "objeto",
+          "propiedades": {
+            "identificación": {
+              "tipo": "entero",
+              "formato": "int32"
+            },
+            "nombre": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "fecha Nacimiento": {
+              "tipo": "cadena",
+              "formato": "fecha-hora"
+            },
+            "lugar Nacimiento": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "paisNacimiento": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "padre": {
+              "tipo": "entero",
+              "formato": "int32",
+              "solo lectura": verdadero
+            },
+            "genero": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            }
+          },
+          "Propiedades adicionales": falso
+        },
+        "Evento": {
+          "tipo": "objeto",
+          "propiedades": {
+            "identificación": {
+              "tipo": "entero",
+              "formato": "int32"
+            },
+            "nombre": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "artista": {
+              "$ref": "#/componentes/esquemas/Artista"
+            },
+            "donde": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "fecha": {
+              "tipo": "cadena",
+              "formato": "fecha-hora"
+            },
+            "tipoEvento": {
+              "$ref": "#/componentes/esquemas/TipoEvento"
+            },
+            "tipoEventoStr": {
+              "tipo": "cadena",
+              "anulable": cierto,
+              "solo lectura": verdadero
+            }
+          },
+          "Propiedades adicionales": falso
+        },
+        "Noticia": {
+          "tipo": "objeto",
+          "propiedades": {
+            "identificación": {
+              "tipo": "entero",
+              "formato": "int32"
+            },
+            "titulo": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "subtitulo": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "imagenUri": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "escritor": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "editor": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "evento": {
+              "$ref": "#/componentes/esquemas/Evento"
+            },
+            "noticiaTexto": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "artista": {
+              "$ref": "#/componentes/esquemas/Artista"
+            }
+          },
+          "Propiedades adicionales": falso
+        },
+        "TipoEvento": {
+          "enumeración": [
+            0,
+            1,
+            2
+          ],
+          "tipo": "entero",
+          "formato": "int32"
+        },
+        "TipoTicket": {
+          "tipo": "objeto",
+          "propiedades": {
+            "identificación": {
+              "tipo": "entero",
+              "formato": "int32"
+            },
+            "nombre": {
+              "tipo": "cadena",
+              "anulable": verdadero
+            },
+            "asientoNumerado": {
+              "tipo": "booleano"
+            },
+            "valor": {
+              "teclea un número",
+              "formato": "doble"
+            }
+          },
+          "Propiedades adicionales": falso
+        }
+      }
+    }
+  }
