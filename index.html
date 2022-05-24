@@ -121,9 +121,79 @@
           </div>
       </div>
   </section>
-    
- 
 
+    <!-- carusel mini noticia -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <h1>NUEVOS EVENTOS</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+          <div class="card">
+            <img src="multimedia/ariel-szanto-aqA82Kt_bsE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ULTRA</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">COMPRAR ENTRADAS</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="multimedia/bring-me-the-horizon-2021-696x479.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BRING ME THE HORIZON</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">COMPRAR ENTRADAS</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="multimedia/Joyeux-40e-anniversaire-deadmau5-celebrez-avec-5-de-ses-titres.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DEAD MAUS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">COMPRAR ENTRADAS</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="multimedia/277781235-320650273385220-8321478473860314554-n_39744491_20220401152330.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RED HOT CHILI PEPPERS</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">COMPRAR ENTRADAS</a>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="multimedia/foto_de_john-mayer-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">JOHN MAYER</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">COMPRAR ENTRADAS</a>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="multimedia/T7IQHJFVTVFTFJYOTEOGPC7NFE.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHAVO OF THE 8 </h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+<!-- fin del carusel noticias -->
 
   <footer>
     <div class="partfooter">
@@ -139,6 +209,24 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
@@ -151,6 +239,8 @@
      
      <script>
       $('.carousel').carousel();
+
+      
   </script>
   </body>
 </html>
