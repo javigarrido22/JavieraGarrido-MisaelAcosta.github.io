@@ -680,7 +680,7 @@
           "formato": "int32"
         },
         "TipoTicket": {
-          "tipo": "objeto",
+          "tipo": "Virtual",
           "propiedades": {
             "identificación": {
               "tipo": "entero",
