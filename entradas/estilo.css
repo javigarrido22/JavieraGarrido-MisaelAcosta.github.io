@@ -66,6 +66,22 @@ body{
  
 }
 
+/*PRODUCTOS*/
+
 .artistas-list {
     width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
+
+/*
+.artistas-list .item-artist {
+    width: 22%;
+    margin-left: 3%;
+}
+
+.artistas-list .item-artist img {
+    width: 100%;
+}
+*/
