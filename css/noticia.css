@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../multimedia/peakpx.jpg');
+}
+
+#Busqueda {
+    background-color: black;
+    border-color: #000000;
+}
