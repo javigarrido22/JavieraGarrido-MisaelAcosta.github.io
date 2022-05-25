@@ -10,6 +10,9 @@ body {
 }
 /* contenedores */
 
+header{
+    position: fixed-top;
+}
 .contenedor1{
     width: 90%;
     max-width: 1000px;
@@ -254,3 +257,39 @@ footer {
     justify-content: center;
     font-weight: normal;
 }
+
+
+.about-area{
+    background:#f8f9fb
+
+}
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+  }
+  
+  .site-main .about-area .about-title h2 > span{
+    display: block;
+    letter-spacing: 21px;
+    margin-top: 68px;
+  }
+  
+  .site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+  }
+
+  h6{
+      margin-top: 120px;
+      font-weight: 700;
+      height:auto
+  }
+  .text-uppercase{
+    margin-top: 90px; 
+    font-weight: 700;
+
+  }
+
+
+ .para{
+    font-weight: 700; 
+ }
