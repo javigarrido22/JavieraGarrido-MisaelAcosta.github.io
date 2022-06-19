@@ -42,6 +42,8 @@ h1 {
 
 /* header */
 
+
+
 header::before {
     content: "";
     display: block;
